@@ -28,6 +28,23 @@ For example, if we
 
 1 is the main focus of transliteration.  2, 3 and 4 the model should pass through untouched, but the model must learn to distinguish 3 from 1.
 
+### Multiple pairs: multiple sources
+
+We can train a model that converts multiple source scripts into the target script and language.
+
+`նապրիմեր` => `например`
+
+See also: [Transfer learning](https://deepchar.github.io/#transfer-learning))
+
+### Multiple pairs: multiple targets
+
+We can train a model that converts multiple languages in the source script into multiple target scripts and languages.
+
+`naprimer` => `например`  
+`orinak` => `օրինակ`
+
+In this flavour of the task, the model is implicitly learning [language identification](https://en.wikipedia.org/wiki/Language_identification).
+
 ## Metrics
 
 How do we evaluate different outputs?
